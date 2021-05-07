@@ -26,7 +26,18 @@ RocketMQ，是阿里开源的，经过阿里的生产环境的超高并发、高
 因此Kafka在大数据领域中配合实时计算技术（比如Spark Streaming、Storm、Flink）使用的较多。但是在传统的MQ中间件使用场景中较少采用。
 
 ## 4.商品秒杀，全流程，怎么实现，有哪些要点
-扣减库存，怎么防止锁竞争冲突
+https://www.cnblogs.com/diegodu/p/9244955.html
+https://blog.csdn.net/weixin_41563161/article/details/106088859?utm_medium=distribute.pc_relevant.none-task-blog-baidujs_baidulandingword-0&spm=1001.2101.3001.4242
+https://zhuanlan.zhihu.com/p/164707091
+https://blog.csdn.net/weixin_35681869/article/details/107587749
+
+要点总结：
+1、前端三板斧【扩容】【限流】【静态化】
+2、后端两条路【内存】+【排队】
+
+## 5.扣减库存，怎么防止锁竞争冲突
+
+
 redis script脚本
 redis数据结构，每种数据结构的应用场景
 项目流程介绍，核心点
