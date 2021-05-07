@@ -39,10 +39,13 @@ https://blog.csdn.net/weixin_35681869/article/details/107587749
 https://blog.csdn.net/qq315737546/article/details/76850173
 
 ## 6.redis数据结构，每种数据结构的应用场景
+https://blog.csdn.net/xinzhifu1/article/details/104350271
 
 ## 7.redis script脚本
+https://blog.csdn.net/weixin_41384860/article/details/115003786
 
 ## 8.分布式锁
+https://blog.csdn.net/leilei107/article/details/106066740
 
 ## 9.项目流程介绍，核心点
 
