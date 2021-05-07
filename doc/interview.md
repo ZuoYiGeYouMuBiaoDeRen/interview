@@ -36,8 +36,14 @@ https://blog.csdn.net/weixin_35681869/article/details/107587749
 2、后端两条路【内存】+【排队】
 
 ## 5.扣减库存，怎么防止锁竞争冲突
+https://blog.csdn.net/qq315737546/article/details/76850173
+
+## 6.redis数据结构，每种数据结构的应用场景
+
+## 7.redis script脚本
+
+## 8.分布式锁
+
+## 9.项目流程介绍，核心点
 
 
-redis script脚本
-redis数据结构，每种数据结构的应用场景
-项目流程介绍，核心点
