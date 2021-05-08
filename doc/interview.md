@@ -1,5 +1,6 @@
 ## 1.mysql事物隔离级别
 https://blog.csdn.net/m0_48795607/article/details/112881436?utm_medium=distribute.pc_relevant.none-task-blog-baidujs_title-0&spm=1001.2101.3001.4242
+https://blog.csdn.net/weixin_33969103/article/details/113629655
 
 ## 2.分布式事务实现方式
 https://www.cnblogs.com/crazymakercircle/p/14375424.html
