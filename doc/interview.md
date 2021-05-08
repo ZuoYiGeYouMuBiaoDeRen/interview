@@ -17,6 +17,7 @@ TCC用于强一致主要用于核心模块，例如交易/订单等。最终一�
 
 ## 3.mq选型，为啥要用kafka，kafka优势，有没有其他的替代方案
 https://blog.csdn.net/weixin_40778497/article/details/107912755
+
 https://www.jianshu.com/p/18c45f23f859
 
 RocketMQ，是阿里开源的，经过阿里的生产环境的超高并发、高吞吐的考验，性能卓越，同时还支持分布式事务等特殊场景。
@@ -28,8 +29,11 @@ RocketMQ，是阿里开源的，经过阿里的生产环境的超高并发、高
 
 ## 4.商品秒杀，全流程，怎么实现，有哪些要点
 https://www.cnblogs.com/diegodu/p/9244955.html
+
 https://blog.csdn.net/weixin_41563161/article/details/106088859?utm_medium=distribute.pc_relevant.none-task-blog-baidujs_baidulandingword-0&spm=1001.2101.3001.4242
+
 https://zhuanlan.zhihu.com/p/164707091
+
 https://blog.csdn.net/weixin_35681869/article/details/107587749
 
 要点总结：
