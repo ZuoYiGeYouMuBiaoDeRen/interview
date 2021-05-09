@@ -76,18 +76,31 @@ https://blog.csdn.net/zjh_746140129/article/details/84487589
 
 ## 16.Spring Bean的生命周期流程？
 https://blog.csdn.net/w_linux/article/details/80086950
+
 https://www.cnblogs.com/weixy3/p/14088458.html
+
 https://www.cnblogs.com/zrtqsk/p/3735273.html
+
+## 17.Spring AOP的实现？
+https://blog.csdn.net/zzti_erlie/article/details/106976850
+
+https://zhuanlan.zhihu.com/p/222466171
+
+https://blog.csdn.net/dadiyang/article/details/82920139
     
-8、请介绍下jdk 8里面的cms和g1? 标记复制、标记整理；增量标记漏标。
+## 18.请介绍下jdk 8里面的cms和g1? 标记复制、标记整理；增量标记漏标。
+https://blog.csdn.net/u010310183/article/details/102790573
 
-9、线程的基本状态，Thread下的 yield、sleep、wait的区别？
+http://www.mianshigee.com/question/10052hfb
 
-10、synchronized锁升级流程?
+## 19.线程的基本状态，Thread下的 yield、sleep、wait的区别？
+https://blog.csdn.net/qq_43322057/article/details/105884484
 
-11、请介绍下IO复用，epoll是怎么实现的？
+## 20.synchronized锁升级流程?
+https://blog.csdn.net/tongdanping/article/details/79647337?utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-1.vipsorttest&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-1.vipsorttest
 
-12、Spring AOP的实现？
+## 21.请介绍下IO多路复用，epoll是怎么实现的？
+https://www.cnblogs.com/liqiangwei/p/14354144.html
 
 13、Netty Reactor模型？
 
