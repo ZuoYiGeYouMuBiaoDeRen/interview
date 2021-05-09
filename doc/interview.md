@@ -54,4 +54,52 @@ https://blog.csdn.net/leilei107/article/details/106066740
 
 ## 9.项目流程介绍，核心点
 
+## 10.mybatis逻辑分页和物理分页的区别？
+https://www.cnblogs.com/ljstudy/p/14468632.html
+
+## 11.mybatis延迟加载怎么实现的?
+https://blog.csdn.net/shfqbluestone/article/details/52888144?utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-2.vipsorttest&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-2.vipsorttest
+
+## 12.mybatis executor 三级缓存分别介绍下？
+https://blog.csdn.net/weixin_39758041/article/details/110588841
+
+## 13.SpringbootApplication 介绍下？
+https://www.cnblogs.com/niugang0920/p/12197085.html
+
+## 14.Spring Boot为啥要基于Spring实现？
+https://blog.csdn.net/xunjiushi9717/article/details/99564539
+
+## 15.什么是IoC自动装配？为啥要用Spring IoC?就不能自己new吗？
+https://blog.csdn.net/zjh_746140129/article/details/84487589
+
+为什么不使用new来创建实例？1.增加耦合，会访问到内部属性，2.更新的地方比较多，难于维护
+
+## 16.Spring Bean的生命周期流程？
+https://blog.csdn.net/w_linux/article/details/80086950
+https://www.cnblogs.com/weixy3/p/14088458.html
+https://www.cnblogs.com/zrtqsk/p/3735273.html
+    
+8、请介绍下jdk 8里面的cms和g1? 标记复制、标记整理；增量标记漏标。
+
+9、线程的基本状态，Thread下的 yield、sleep、wait的区别？
+
+10、synchronized锁升级流程?
+
+11、请介绍下IO复用，epoll是怎么实现的？
+
+12、Spring AOP的实现？
+
+13、Netty Reactor模型？
+
+14、请介绍下倒排索引，倒排列表用fst为啥不用B+Tree？
+
+15、ThreadLocal是怎么实现的?
+
+16、设计模式：模版和策略模式，描述下工厂模式？
+
+17、Netty堆外内存需要自己清理吗，怎么清理？请详细描述下零拷贝是怎么实现的？PhatomReference。
+
+18、elasticsearch下查询操作是怎么实现的？
+
+19、算法:double的n次方；链表倒数第k个节点？
 
