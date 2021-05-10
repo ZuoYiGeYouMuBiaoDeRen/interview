@@ -116,7 +116,10 @@ lucene从4开始大量使用的数据结构是FST（Finite State Transducer）�
 
 https://www.cnblogs.com/bonelee/p/6226185.html
 
-## 25.elasticsearch下查询操作是怎么实现的
+## 25.elasticsearch常见面试题
+https://segmentfault.com/a/1190000037450984
+
+https://www.nosuchfield.com/2019/03/18/How-Elasticsearch-elected-the-master/
 
 ## 26.ThreadLocal是怎么实现的?
 https://www.cnblogs.com/huanshilang/p/12204703.html
