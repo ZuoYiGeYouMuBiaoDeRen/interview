@@ -136,5 +136,41 @@ https://blog.csdn.net/qq_41050869/article/details/104201072
 单例模式：双重检查，静态内部类；https://blog.csdn.net/bupttulongming/article/details/103218282
 
 ## 29.算法:double的n次方；链表倒数第k个节点？
+double的n次方
+
 https://www.cnblogs.com/gl-developer/p/6475399.html
+```java
+public double myPow(double x, int n) {
+    if (n == 0) {
+        return 1;
+    }
+    if (n == 1) {
+        return x;
+    }
+    if (n == -1) {
+        return 1 / x;
+    }
+    double tmp = myPow(x, n >> 1);
+    tmp *= tmp;
+    if ((n & 1) == 1) {
+        tmp *= x;
+    }
+    return tmp;
+}
+```
+链表倒数第k个节点
+```java
+public ListNode getKthFromEnd(ListNode head, int k) {
+    ListNode front=head;
+    ListNode res=head;
+    for (int i = 0; i < k; i++) {
+        front=front.next;
+    }
+    while (front!=null){
+        front=front.next;
+        res=res.next;
+    }
+    return res;
+}
+```
 
