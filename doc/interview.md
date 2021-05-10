@@ -102,17 +102,39 @@ https://blog.csdn.net/tongdanping/article/details/79647337?utm_medium=distribute
 ## 21.请介绍下IO多路复用，epoll是怎么实现的？
 https://www.cnblogs.com/liqiangwei/p/14354144.html
 
-13、Netty Reactor模型？
+## 22.Netty Reactor模型？
+https://blog.csdn.net/hollis_chuang/article/details/115274546
 
-14、请介绍下倒排索引，倒排列表用fst为啥不用B+Tree？
+https://www.jianshu.com/p/d95638039a66
 
-15、ThreadLocal是怎么实现的?
+## 23.Netty堆外内存需要自己清理吗，怎么清理？请详细描述下零拷贝是怎么实现的？PhatomReference
 
-16、设计模式：模版和策略模式，描述下工厂模式？
+## 24.请介绍下倒排索引，倒排列表用fst为啥不用B+Tree？
+正排索引是从文档到关键字的映射（已知文档求关键字），倒排索引是从关键字到文档的映射（已知关键字求文档）
 
-17、Netty堆外内存需要自己清理吗，怎么清理？请详细描述下零拷贝是怎么实现的？PhatomReference。
+lucene从4开始大量使用的数据结构是FST（Finite State Transducer）。FST有两个优点：1）空间占用小。通过对词典中单词前缀和后缀的重复利用，压缩了存储空间；2）查询速度快。O(len(str))的查询时间复杂度。
 
-18、elasticsearch下查询操作是怎么实现的？
+https://www.cnblogs.com/bonelee/p/6226185.html
 
-19、算法:double的n次方；链表倒数第k个节点？
+## 25.elasticsearch下查询操作是怎么实现的
+
+## 26.ThreadLocal是怎么实现的?
+https://www.cnblogs.com/huanshilang/p/12204703.html
+
+https://zhuanlan.zhihu.com/p/166259550
+
+## 27.强引用和弱引用的区别？发生gc时会怎么处理？WeakReference Gc的时候会回收掉
+https://blog.csdn.net/qq_41050869/article/details/104201072
+
+## 28.设计模式：模版和策略模式，描述下工厂模式？
+模板模式：https://blog.csdn.net/Sirius_hly/article/details/104910228
+
+策略模式：https://blog.csdn.net/weixin_41835916/article/details/81903774
+
+工厂模式：https://blog.csdn.net/southjeff/article/details/79877412
+
+单例模式：双重检查，静态内部类；https://blog.csdn.net/bupttulongming/article/details/103218282
+
+## 29.算法:double的n次方；链表倒数第k个节点？
+https://www.cnblogs.com/gl-developer/p/6475399.html
 
