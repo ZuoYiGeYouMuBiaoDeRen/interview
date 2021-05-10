@@ -108,6 +108,9 @@ https://blog.csdn.net/hollis_chuang/article/details/115274546
 https://www.jianshu.com/p/d95638039a66
 
 ## 23.Netty堆外内存需要自己清理吗，怎么清理？请详细描述下零拷贝是怎么实现的？PhatomReference
+netty对外内存，可以自动回收（堆内的DirectByteBuffer对象被GC时，它背后的堆外内存也会被回收），也可以主动回收（从DirectByteBuffer里取出Cleaner，然后调用它的clean()就行）
+
+https://blog.csdn.net/dfdsggdgg/article/details/51557644
 
 ## 24.请介绍下倒排索引，倒排列表用fst为啥不用B+Tree？
 正排索引是从文档到关键字的映射（已知文档求关键字），倒排索引是从关键字到文档的映射（已知关键字求文档）
