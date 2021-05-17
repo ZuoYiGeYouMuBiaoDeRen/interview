@@ -211,14 +211,26 @@ public class Solution {
     }
 }
 ```
-
-三面
-
-
-1. 项目介绍
-
-2. 算法：求一个 float 数的立方根，牛顿迭代法
-
-3. 什么时候能入职，你对岗位的期望是什么
-
-4. 你还在面其他公司么，目前是一个什么流程
+## 27.算法：求一个 float 数的立方根，牛顿迭代法
+```java
+//二分法
+public static double kaiGen(double input){
+    double min = 0;
+    double max = input;
+    double mid = 0;
+    
+    while((max - min) > 0.001){   //精度
+        mid = (max + min) / 2;
+        if((mid * mid * mid) > input){
+            max = mid;
+        }
+        else if((mid * mid * mid) < input){
+            min = mid;
+        }
+        else{
+            return mid;
+        }
+    }
+    return max; //当输入为0时直接返回
+}
+```
