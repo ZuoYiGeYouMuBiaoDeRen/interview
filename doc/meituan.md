@@ -81,15 +81,61 @@ kafka如何避免重平衡：
 
 ## 16.怎么理解分布式和微服务，为什么要拆分服务，会产生什么问题，怎么解决这些问题
 
-9. 你们用的什么消息中间件，kafka，为什么用 kafka，高吞吐量，怎么保证高吞吐量的，设计模型，零拷贝
+## 17.你们用的什么消息中间件，kafka，为什么用 kafka，高吞吐量，怎么保证高吞吐量的，设计模型，零拷贝
+总的来说Kafka快的原因：  
+1、partition顺序读写，充分利用磁盘特性，这是基础；  
+2、Producer生产的数据持久化到broker，采用mmap文件映射，实现顺序的快速写入；  
+3、Customer从broker读取数据，采用sendfile，将磁盘文件读到OS内核缓冲区后，直接转到socket buffer进行网络发送。  
 
-10. 算法 1：给定一个长度为 N 的整形数组 arr，其中有 N 个互不相等的自然数 1-N，请实现 arr 的排序，但是不要把下标 0∼N−1 位置上的数通过直接赋值的方式替换成 1∼N
+mmap 和 sendfile总结：  
+1、都是Linux内核提供、实现零拷贝的API；  
+2、sendfile 是将读到内核空间的数据，转到socket buffer，进行网络发送；  
+3、mmap将磁盘文件映射到内存，支持读和写，对内存的操作会反映在磁盘文件上。  
+RocketMQ 在消费消息时，使用了 mmap。kafka 使用了 sendFile。  
 
-11. 算法 2：判断一个树是否是平衡二叉树
+## 18.算法 1：给定一个长度为 N 的整形数组 arr，其中有 N 个互不相等的自然数 1-N，请实现 arr 的排序，但是不要把下标 0∼N−1 位置上的数通过直接赋值的方式替换成 1∼N
+```java
+public static void sort(int[] arr) {
+    if (arr == null || arr.length < 2) {
+        return;
+    }
+    int tmp = 0;
+    for (int i = 0; i < arr.length; i++) {
+        if (arr[i] != i + 1) {
+            tmp = arr[arr[i] - 1];
+            arr[arr[i] - 1] = arr[i];
+            arr[i] = tmp;
+        }
+    }
+}
+```
+## 19.算法 2：判断一个树是否是平衡二叉树
 
-
-
-二面
+```text
+recur(root) 函数：
+返回值：
+当节点root 左 / 右子树的深度差 \leq 1≤1 ：则返回当前子树的深度，即节点 root 的左 / 右子树的深度最大值 +1+1 （ max(left, right) + 1 ）；
+当节点root 左 / 右子树的深度差 > 2>2 ：则返回 -1−1 ，代表 此子树不是平衡树 。
+终止条件：
+当 root 为空：说明越过叶节点，因此返回高度 00 ；
+当左（右）子树深度为 -1−1 ：代表此树的 左（右）子树 不是平衡树，因此剪枝，直接返回 -1−1 ；
+```
+```java
+class Solution {
+    public boolean isBalanced(TreeNode root) {
+        return recur(root) != -1;
+    }
+    
+    private int recur(TreeNode root) {
+        if (root == null) return 0;
+        int left = recur(root.left);
+        if(left == -1) return -1;
+        int right = recur(root.right);
+        if(right == -1) return -1;
+        return Math.abs(left - right) < 2 ? Math.max(left, right) + 1 : -1;
+    }
+}
+```
 
 
 1. Innodb 的结构了解么，磁盘页和缓存区是怎么配合，以及查找的，缓冲区和磁盘数据不一致怎么办，mysql 突然宕机了会出现数据丢失么
