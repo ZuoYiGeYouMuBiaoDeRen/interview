@@ -111,11 +111,21 @@ static final int hash(Object key) {
 
 线程不安全：1.扩容造成死循环（头插法）；2.扩容造成数据丢失  
 
-2. arraylist 原理，为什么数组加 transient，add 和 get 时间复杂度，扩容原理，和 linkedlist 区别，原理，分别在什么场景下使用，为什么
+## 13.arraylist 原理，为什么数组加 transient，add 和 get 时间复杂度，扩容原理，和 linkedlist 区别，原理，分别在什么场景下使用，为什么
+为什么数组加 transient：
+ArrayList在序列化的时候会调用writeObject，直接将size和element写入ObjectOutputStream；反序列化时调用readObject，从ObjectInputStream获取size和element，再恢复到elementData。  
+为什么不直接用elementData来序列化，而采用上诉的方式来实现序列化呢？原因在于elementData是一个缓存数组，它通常会预留一些容量，等容量不足时再扩充容量，那么有些空间可能就没有实际存储元素，采用上诉的方式来实现序列化时，就可以保证只序列化实际存储的那些元素，而不是整个数组，从而节省空间和时间。  
 
-3. 了解哪些并发工具类
+扩容原理：1、扩容，把原来的数组复制到另一个内存空间更大的数组中；2、添加元素，把新元素添加到扩容以后的数组中  
 
-4. reentrantlock 的实现原理，加锁和释放锁的一个过程，aqs，公平和非公平，可重入，可中断怎么实现的
+## 14.了解哪些并发工具类
+CountDownLatch、ConcurrentHashMap
+
+## 15.reentrantlock 的实现原理，加锁和释放锁的一个过程，aqs，公平和非公平，可重入，可中断怎么实现的
+https://juejin.cn/post/6844903805683761165  
+https://segmentfault.com/a/1190000014721183  
+
+
 
 5. concurrenthashmap 原理，put，get，size，扩容，怎么保证线程安全的，1.7 和 1.8 的区别，为什么用 synchronized，分段锁有什么问题，hash 算法做了哪些优化
 
