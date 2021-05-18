@@ -109,6 +109,8 @@ static final int hash(Object key) {
 }
 ```
 
+hash算法优化：hash 优化算法包含两部分。一是通过 hashCode 值的高16 位参与运算来减少冲突，二是通过与运算而不是取模运算提高性能  
+
 线程不安全：1.扩容造成死循环（头插法）；2.扩容造成数据丢失  
 
 ## 13.arraylist 原理，为什么数组加 transient，add 和 get 时间复杂度，扩容原理，和 linkedlist 区别，原理，分别在什么场景下使用，为什么
@@ -125,13 +127,17 @@ CountDownLatch、ConcurrentHashMap
 https://juejin.cn/post/6844903805683761165  
 https://segmentfault.com/a/1190000014721183  
 
+## 16.concurrenthashmap 原理，put，get，size，扩容，怎么保证线程安全的，1.7 和 1.8 的区别，为什么用 synchronized，分段锁有什么问题，hash 算法做了哪些优化
+hash 优化算法包含两部分：一是通过 hashCode 值的高16 位参与运算来减少冲突，二是通过与运算而不是取模运算提高性能  
 
+## 17.threadlocal 用过么，什么场景下使用的，原理，hash 冲突怎么办，扩容实现，会有线程安全问题么，内存泄漏产生原因，怎么解决
+Hash冲突怎么解决：和HashMap的最大的不同在于，ThreadLocalMap结构非常简单，没有next引用，也就是说ThreadLocalMap中解决Hash冲突的方式并非链表的方式，而是采用线性探测的方式，所谓线性探测，就是根据初始key的hashcode值确定元素在table数组中的位置，如果发现这个位置上已经有其他key值的元素被占用，则利用固定的算法寻找一定步长的下个位置，依次判断，直至找到能够存放的位置。    
 
-5. concurrenthashmap 原理，put，get，size，扩容，怎么保证线程安全的，1.7 和 1.8 的区别，为什么用 synchronized，分段锁有什么问题，hash 算法做了哪些优化
+扩容：两倍长度扩容，重新计算索引，扩容的同时也顺便清理了key为null的元素，即stale entry，不再存入扩容后的数组中。  
 
-6. threadlocal 用过么，什么场景下使用的，原理，hash 冲突怎么办，扩容实现，会有线程安全问题么，内存泄漏产生原因，怎么解决
+如果threadlocal.get之后的副本，只在当前线程中使用，那么是线程安全的；如果**对其他线程暴露** ，不一定是线程安全的。  
 
-7. 垃圾收集算法，各有什么优缺点，gc roots 有哪些，什么情况下会发生 full gc
+## 18.垃圾收集算法，各有什么优缺点，gc roots 有哪些，什么情况下会发生 full gc
 
 8. 了解哪些设计模式，工厂，策略，装饰者，桥接模式讲讲，单例模式会有什么问题
 
