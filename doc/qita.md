@@ -52,3 +52,7 @@ public int minSubArrayLen(int s, int[] nums) {
     return ans == Integer.MAX_VALUE ? 0 : ans;
 }
 ```
+
+## 8.b树、b+树，区别，mysql 为什么用b+树而不用hash、b、红黑树等
+https://blog.csdn.net/weixin_36098377/article/details/108688986  
+
