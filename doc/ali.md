@@ -191,55 +191,56 @@ https://mp.weixin.qq.com/s/kjeWEXJfDz5pM3HLhYs9Xw
 ## 28.分库分表做过么，怎么做到不停机扩容，双写数据丢失怎么办，跨库事务怎么解决
 
 ## 29.你们用的 redis 集群么，扩容的过程，各个节点间怎么通信的
+https://blog.csdn.net/suifeng629/article/details/106761559  
 
-6. 对象一定分配在堆上么，JIT，分层编译，逃逸分析
+## 30.对象一定分配在堆上么，JIT，分层编译，逃逸分析
 
-7. es 的写入，查询过程，底层实现，为什么这么设计
+## 31.es 的写入，查询过程，底层实现，为什么这么设计
 
-8. es 集群，脑裂问题，怎么产生的，如何解决
+## 32.es 集群，脑裂问题，怎么产生的，如何解决
+https://blog.csdn.net/ichen820/article/details/107414528  
 
-9. while(true)里面一直 new thread().start()会有什么问题
+## 33.while(true)里面一直 new thread().start()会有什么问题
 
-10. socket 了解么，tcp 和 udp 的实现区别，不了解，用的不多
+## 34.socket 了解么，tcp 和 udp 的实现区别，不了解，用的不多
+https://www.cnblogs.com/fundebug/p/differences-of-tcp-and-udp.html  
 
-11. 设计一个秒杀系统能承受千万级并发，如果 redis 也扛不住了怎么办
+## 35.设计一个秒杀系统能承受千万级并发，如果 redis 也扛不住了怎么办
 
-12. 项目介绍
+## 36.讲讲你最熟悉的技术，jvm，mysql，redis，具体哪方面
 
-1. 讲讲你最熟悉的技术，jvm，mysql，redis，具体哪方面
+## 37.new Object[100]对象大小，它的一个对象引用大小，对象头结构
 
-2. new Object[100]对象大小，它的一个对象引用大小，对象头结构
+## 38.mysql 主从复制，主从延时怎么解决
 
-3. mysql 主从复制，主从延时怎么解决
+## 39.怎么保证 redis 和 mysql 的一致性，redis 网络原因执行超时了会执行成功么，那不成功怎么保证数据一致性
+https://blog.csdn.net/dongcheng_2015/article/details/116852786  
 
-4. 怎么保证 redis 和 mysql 的一致性，redis 网络原因执行超时了会执行成功么，那不成功怎么保证数据一致性
+## 40.redis 持久化过程，aof 持久化会出现阻塞么，一般什么情况下使用 rdb，aof
 
-5. redis 持久化过程，aof 持久化会出现阻塞么，一般什么情况下使用 rdb，aof
+## 41.线上有遇到大流量的情况么，产生了什么问题，为什么数据库 2000qps 就撑不住了，有想过原因么，你们当时怎么处理的
 
-6. 线上有遇到大流量的情况么，产生了什么问题，为什么数据库 2000qps 就撑不住了，有想过原因么，你们当时怎么处理的
+## 42.限流怎么做，如果让你设计一个限流系统，怎么实现
 
-7. 限流怎么做，如果让你设计一个限流系统，怎么实现
+## 43.dubbo 和 spring cloud 区别，具体区别，分别什么场景使用
+https://my.oschina.net/u/4232197/blog/4522901  
 
-8. dubbo 和 spring cloud 区别，具体区别，分别什么场景使用
+## 44.给了几个场景解决分布式事务问题
+tcc，可靠消息最终一致性  
 
-9. 给了几个场景解决分布式事务问题
+## 45.你觉得你们的业务对公司有什么实际价值，体现在哪，有什么数据指标么
 
-10. 项目介绍
+## 46.怎么理解用户态，内核态，为什么要分级别，有几种转换的方式，怎么转换的，转换失败怎么办
+https://www.cnblogs.com/xxiaoye/p/3723175.html  
 
-11. 你觉得你们的业务对公司有什么实际价值，体现在哪，有什么数据指标么
+## 47.怎么理解异常，它的作用是什么，你们工作中是怎么使用的
 
-1. 怎么理解用户态，内核态，为什么要分级别，有几种转换的方式，怎么转换的，转换失败怎么办
+## 48.你们用 redis 么，用来做什么，什么场景使用的，遇到过什么问题，怎么解决的
 
-2. 怎么理解异常，它的作用是什么，你们工作中是怎么使用的
+## 49.jvm 元空间内存结构，永久代有什么问题
+https://blog.csdn.net/zhou920786312/article/details/97984663  
+https://blog.csdn.net/qq_36071795/article/details/83715509?utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-2.control&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-2.control  
 
-3. 你们用 redis 么，用来做什么，什么场景使用的，遇到过什么问题，怎么解决的
+## 50.你平时开发中怎么解决问题，假如现在线上有一个告警，你的解决思路，过程
 
-4. jvm 元空间内存结构，永久代有什么问题
-
-5. 你平时开发中怎么解决问题，假如现在线上有一个告警，你的解决思路，过程
-
-6. 你们为什么要用 mq，遇到过什么问题么，怎么就解决的
-
-7. 你觉得和友商相比，你们的优势在哪
-
-8. 聊天：炒股么，为什么买 B 站，天天用，看好他
+## 51.你们为什么要用 mq，遇到过什么问题么，怎么就解决的
