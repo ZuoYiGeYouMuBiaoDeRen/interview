@@ -45,21 +45,62 @@ https://www.cnblogs.com/xudong-bupt/p/3667729.html
 
 ## 3. 线程池原理，核心参数，线程数设置，参数动态调整后变化过程，Tomcat 线程池原理，常用的线程池，你们一般使用哪种，为什么，会有什么问题，线程抛异常怎么办，阻塞队列原理
 
-4. 做过分库分表么，为什么要分库分表，会有什么问题，多少数据适合分库分表，跨库，聚合操作怎么做
+## 4. 做过分库分表么，为什么要分库分表，会有什么问题，多少数据适合分库分表，跨库，聚合操作怎么做
 
-6. 算法：给定一个二叉树, 找到该树中两个指定节点的最近公共祖先
+## 6. 算法：给定一个二叉树, 找到该树中两个指定节点的最近公共祖先
+```java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    /**
+     * node中是否包含p或q
+     *
+     * @param node
+     * @param p
+     * @param q
+     * @return
+     */
+    private boolean dfs(TreeNode node, TreeNode p, TreeNode q) {
+        if (this.resNode != null) {
+            return false;
+        }
 
-7. 你对自己有什么规划，想学习什么技术，最近在看什么书
+        if (node == null) {
+            return false;
+        }
+
+        boolean left = dfs(node.left, p, q);
+        boolean right = dfs(node.right, p, q);
+
+        if ((left && right) || ((left || right) && (node.val == p.val || node.val == q.val))) {
+            this.resNode = node;
+            return false;
+        }
+
+        return left || right || node.val == p.val || node.val == q.val;
+    }
+
+    private TreeNode resNode;
+
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        dfs(root,p,q);
+        return this.resNode;
+    }
+}
+```
 
 
+## 1. nio 讲讲，实现原理，优缺点
+https://www.cnblogs.com/kma-3/p/9625443.html  
+https://blog.csdn.net/h2604396739/article/details/82534253  
 
-三面
+## 2. 了解 netty 么，讲讲 netty 的设计模型，架构，使用场景
 
-
-1. nio 讲讲，实现原理，优缺点
-
-2. 了解 netty 么，讲讲 netty 的设计模型，架构，使用场景
-
-3. zookeeper 读写数据过程
-
-4. 项目介绍
+## 3. zookeeper 读写数据过程
