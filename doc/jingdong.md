@@ -41,6 +41,8 @@ https://www.cnblogs.com/theRhyme/p/11057233.html
 https://zebinh.github.io/2020/07/SpringStartupAndIoCAndAop/  
 https://juejin.cn/post/6847902217777709063  
 
+**重要** https://www.jianshu.com/p/1dec08d290c1  
+
 2. 使用过事务么，遇到过事务失效的情况么，原因是什么
 
 3. springboot 是怎么加载类的，通过什么方式
