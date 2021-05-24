@@ -20,20 +20,26 @@ https://www.cnblogs.com/HKUI/p/13889031.html
 4.流水号一般相对较长，比如 28 位，32 位等，过长的话会二级索引占用空间较多。同时为了业务需求，流水号具有一定的随机性。  
 https://cloud.tencent.com/developer/article/1737952  
 
-5. 一般你们怎么建 mysql 索引，基于什么原则，遇到过索引失效的情况么，怎么优化的
+自增id用完怎么办：https://blog.csdn.net/qq_36761831/article/details/100136057  
 
-6. jvm 内存结构，堆结构，栈结构，a+b 操作数栈过程，方法返回地址什么时候回收，程序计数器什么时候为空
+## 5. 一般你们怎么建 mysql 索引，基于什么原则，遇到过索引失效的情况么，怎么优化的
+https://www.cnblogs.com/yizhiamumu/p/9055531.html  
 
-7. redis 实现分布式锁，还有其他方式么，zookeeper 怎么实现，各有什么有缺点，你们为什么用 redis 实现
+索引失效优化：https://blog.csdn.net/wuseyukui/article/details/72312574  
 
-8. 算法：返回一个树的左视图
+## 6. jvm 内存结构，堆结构，栈结构，a+b 操作数栈过程，方法返回地址什么时候回收，程序计数器什么时候为空
+https://www.huaweicloud.com/articles/4799df506d5b9ae8bd0a5cb5247723b5.html  
+https://www.cnblogs.com/myseries/p/12871398.html  
 
+## 7. redis 实现分布式锁，还有其他方式么，zookeeper 怎么实现，各有什么有缺点，你们为什么用 redis 实现
 
+## 8. 算法：返回一个树的左视图
+https://blog.csdn.net/sinat_36231857/article/details/88740525  
 
-二面
-
-
-1. spring 你比较了解哪方面，讲讲，生命周期，bean 创建过程
+## 1. spring 你比较了解哪方面，讲讲，生命周期，bean 创建过程
+https://www.cnblogs.com/theRhyme/p/11057233.html  
+https://zebinh.github.io/2020/07/SpringStartupAndIoCAndAop/  
+https://juejin.cn/post/6847902217777709063  
 
 2. 使用过事务么，遇到过事务失效的情况么，原因是什么
 
