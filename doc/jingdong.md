@@ -65,4 +65,38 @@ https://blog.csdn.net/R_P_J/article/details/82254494
 ## 3. es 深度分页，优化
 https://cloud.tencent.com/developer/article/1676915?from=information.detail.es%E6%B7%B1%E5%BA%A6%E5%88%86%E9%A1%B5%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88  
 
-5. 算法：验证二叉搜索树
+## 5. 算法：验证二叉搜索树
+```java
+class Solution {
+     //前一个节点
+    TreeNode pre = null;
+    //假设为true
+    boolean ans = true;
+
+    public boolean isValidBST(TreeNode root) {
+        inOrder(root);
+        return this.ans;
+    }
+
+    private void inOrder(TreeNode node) {
+        //node为null或者为非二叉搜索树，快速返回
+        if (node == null || !this.ans) {
+            return;
+        }
+
+        //左
+        inOrder(node.left);
+        //根
+        if (pre == null) {
+            pre = node;
+        } else {
+            if (pre.val >= node.val) {
+                this.ans = false;
+            }
+            pre = node;
+        }
+        //右
+        inOrder(node.right);
+    }
+}
+```
