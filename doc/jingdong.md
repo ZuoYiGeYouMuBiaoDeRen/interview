@@ -53,27 +53,16 @@ https://zhuanlan.zhihu.com/p/83804324
 
 ## 5. 微信朋友圈设计，点赞，评论功能实现，拉黑呢，redis 数据没了怎么办
 
-6. 项目介绍
+## 7. 算法：给你两个非空的链表，表示两个非负的整数。它们每位数字都是按照逆序的方式存储的，并且每个节点只能存储一位数字。请你将两个数相加，并以相同形式返回一个表示和的链表
+https://leetcode-cn.com/problems/add-two-numbers/solution/liang-shu-xiang-jia-by-leetcode-solution/  
 
-7. 算法：给你两个非空的链表，表示两个非负的整数。它们每位数字都是按照逆序的方式存储的，并且每个节点只能存储一位数字。
+## 1. es 倒排索引，原理，lucene，分词，分片，副本
+https://stor.51cto.com/art/202012/634521.htm  
 
-8. 请你将两个数相加，并以相同形式返回一个表示和的链表
+## 2. es 写数据原理，数据实时么，为什么不实时，会丢数据么，segment，cache，buffer，translog 关系
+https://blog.csdn.net/R_P_J/article/details/82254494  
 
-
-
-三面
-
-
-感觉面试官对 es 很熟悉，一直问 es 问题
-
-
-
-1. es 倒排索引，原理，lucene，分词，分片，副本
-
-2. es 写数据原理，数据实时么，为什么不实时，会丢数据么，segment，cache，buffer，translog 关系
-
-3. es 深度分页，优化
-
-4. 项目介绍
+## 3. es 深度分页，优化
+https://cloud.tencent.com/developer/article/1676915?from=information.detail.es%E6%B7%B1%E5%BA%A6%E5%88%86%E9%A1%B5%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88  
 
 5. 算法：验证二叉搜索树
