@@ -56,6 +56,12 @@ public int minSubArrayLen(int s, int[] nums) {
 ## 8.b树、b+树，区别，mysql 为什么用b+树而不用hash、b、红黑树等
 https://blog.csdn.net/weixin_36098377/article/details/108688986  
 
-## 9.25匹马，5个跑道，最少比多少次能比出前3名？前5名？
+## 9. 25匹马，5个跑道，最少比多少次能比出前3名？前5名？
 https://blog.csdn.net/goodfrar/article/details/51661610?utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-1.control&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-1.control  
+
+## 10.redis底层数据结构实现，hash，set，zset
+https://www.jianshu.com/p/05bf8a945944  
+http://redisbook.com/preview/object/sorted_set.html  
+https://juejin.cn/post/6863258283483807752  
+https://developer.aliyun.com/article/666398  
 
