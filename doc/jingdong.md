@@ -43,13 +43,15 @@ https://juejin.cn/post/6847902217777709063
 
 **重要** https://www.jianshu.com/p/1dec08d290c1  
 
-2. 使用过事务么，遇到过事务失效的情况么，原因是什么
+## 2. 使用过事务么，遇到过事务失效的情况么，原因是什么
 
-3. springboot 是怎么加载类的，通过什么方式
+## 3. springboot 是怎么加载类的，通过什么方式
+https://www.cnblogs.com/xxzhuang/p/11194559.html  
 
-4. 什么对象会进入老年代，eden 和 survivor 比例可以调整么，参数是什么，调整后会有什么问题
+## 4. 什么对象会进入老年代，eden 和 survivor 比例可以调整么，参数是什么，调整后会有什么问题
+https://zhuanlan.zhihu.com/p/83804324  
 
-5. 微信朋友圈设计，点赞，评论功能实现，拉黑呢，redis 数据没了怎么办
+## 5. 微信朋友圈设计，点赞，评论功能实现，拉黑呢，redis 数据没了怎么办
 
 6. 项目介绍
 
