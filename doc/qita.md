@@ -65,3 +65,21 @@ http://redisbook.com/preview/object/sorted_set.html
 https://juejin.cn/post/6863258283483807752  
 https://developer.aliyun.com/article/666398  
 
+## 11.spring 事务 原理，transactional注意点
+https://www.cnblogs.com/youzhibing/p/6414780.html  
+https://www.jianshu.com/p/b33c4ff803e0  
+
+https://my.oschina.net/zhangxufeng/blog/1935556  
+https://my.oschina.net/zhangxufeng/blog/1943983  
+https://my.oschina.net/zhangxufeng/blog/1973493  
+
+https://blog.csdn.net/blacktal/article/details/79345902?utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-1.control&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-1.control  
+
+@Transactional使用注意事项：
+1. 不要在 protected,private 或者包内可见方法上使用注解 @Transactional；@Transactional 注解要应用在可见性为 public 的方法上 ;
+2. @Transactional注解的方法在自调用场景中无效 ;
+3. 不要从@Transactional方法内向外传递任何对当前事务做结论的消息
+4. 尽量不要从@Transactional方法内捕捉数据库操作异常
+5. 正确的设置@Transactional 的 propagation 属性
+6. 正确的设置@Transactional 的 rollbackFor 属性
+https://blog.csdn.net/andy_zhang2007/article/details/83624533
